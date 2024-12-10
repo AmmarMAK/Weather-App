@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App - WIP</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-dark">
+    <!--                                     NAVBAR                                                         -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <img src="images/logo@2x.png" alt="Bootstrap" />
+          <div class="d-flex flex-column">
+            <h1 class="text-white">Weather App</h1>
+            <a href="#" class="navbar-brand text-white">tagline goes here</a>
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Live Cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--                                     searchbar                                                         -->
+
+    <input
+      type="search"
+      name=""
+      id="searchBar"
+      class="form-control w-25 mt-5 mb-4 m-auto"
+      placeholder="Find Your Location"
+    />
+    <!--                                     BODY                                                         -->
+
+    <div
+      class="body d-flex justify-content-center align-items-end p-5"
+      id="weatherBody"
+    >
+      <div class="container">
+        <div class="card-group">
+          <div class="card bg-dark text-white text-center">
+            <div class="card-body">
+              <h5 class="card-title" id="todayName"></h5>
+              <p id="todayDateNumber" class="text-white"></p>
+              <p id="monthName" class="text-white"></p>
+              <h5 class="card-title" id="country"></h5>
+              <p class="card-text" id="current-temp"></p>
+             
+            
+              <img src="" alt="" srcset="" id="currentTempPic">
+              <p id="weatherCondition"></p>
+              <p class="card-text">
+                <small class="text-body-secondary"
+                  ><i class="fa-solid fa-umbrella weather-icon"></i
+                  ><span class="text-white" id="humidity"></span></small
+                >
+                <small class="text-body-secondary"
+                  ><i class="fa-solid fa-wind weather-icon"></i
+                  ><span class="text-white" id="windSpeed"></span></small
+                >
+                <small class="text-body-secondary"
+                  ><i class="fa-regular fa-compass weather-icon"></i
+                  ><span class="text-white" id="windDirection"></span></small
+                >
+              </p>
+            </div>
+          </div>
+          <div class="card bg-dark text-white text-center">
+            <div class="card-body">
+              <h5 class="card-title" id="secondDayName"></h5>
+              <img src="" alt=""  id="nextDayPic"/>
+              <p id="secondDayMaxTemp"></p>
+              <p id="secondDayMinTemp"></p>
+              <p id="secondDayCondition"></p>
+            </div>
+          </div>
+          <div class="card bg-dark text-white text-center">
+            <div class="card-body">
+              <h5 class="card-title text-white" id="finalDayName"></h5>
+              <img src="" alt="" id="finalDayPic" />
+              <p id="finalDayMaxTemp"></p>
+              <p id="finalDayMinTemp"></p>
+              <p id="finalDayCondition"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--                                     Footer                                                         -->
+
+    <footer>
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="input-group mb-3 w-50 mt-5 ms-4">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Recipient's username"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="button" id="button-addon2">
+                Subscribe
+              </button>
+            </div>
+          </div>
+
+          <div class="mt-5 me-5">
+            <i class="fa-brands fa-facebook p-1"></i>
+            <i class="fa-brands fa-twitter p-1"></i>
+            <i class="fa-brands fa-google-plus-g p-1"></i>
+            <i class="fa-brands fa-pinterest p-1"></i>
+          </div>
+        </div>
+
+        <div>
+          <p class="text-white py-3 ms-4">
+            Copyright 2014 Company name. Designed by Themezy. All rights
+            reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <h1 id="balad" class="text-white"></h1>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
